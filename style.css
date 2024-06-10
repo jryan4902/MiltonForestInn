@@ -1,0 +1,115 @@
+body {
+  background-color: #DDDDDD; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 1460px; /*added more scroll room to implement a more dramatic nav bar change */
+}
+
+h1{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: #76885B; /* reused the previous nav bar and changed header to a dark green */
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: darkslategray;
+  padding: 10px 20px;
+  background-color: #EEE7DA; 
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  background-color: gray;
+  opacity: 1;/* Added hover effect */
+}
+
+
+.parallax-container { /*added a parallax that involved the hotel */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-attachment: fixed;
+
+  background-image: 
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url(assets/hotel.jpg); /*Image Shadow to make letters show more */
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  row-gap: 4rem;
+
+  text-align: center;
+}
+
+.parallax-container h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.parallax-container h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+#about h1{
+  color: #627254;
+  margin: 60px;
+  text-align: left;
+}
+
+#about h2{
+  display: flex;
+  font-size: 30px;
+  padding-left: 80px;
+  justify-content: space-around;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about p{
+  display: flex;
+   justify-content: space-around;
+  padding-left: 70px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 40px; /*added some spacing to the about text*/
+}
+
+#water{
+  height: 400px;
+  width: 400px;
+  float: left;
+  margin: -35px;
+  margin-left: 10px;
+  border: dotted 4px #76885B;
+}
+
+
+
+
+
